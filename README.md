@@ -1,2 +1,2 @@
-# CreatingFriend
-Working on simple friend application for learning ROR.
+# CreatingFriend App
+This is a Rails Friends app project.
