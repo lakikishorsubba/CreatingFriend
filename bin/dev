@@ -1,2 +1,4 @@
-#!/usr/bin/env ruby
+pid_file = File.expand_path("../tmp/pids/server.pid", __dir__)
+File.delete(pid_file) if File.exist?(pid_file)
+
 exec "./bin/rails", "server", *ARGV

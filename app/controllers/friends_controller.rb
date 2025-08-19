@@ -64,7 +64,8 @@ class FriendsController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
+    #form field
     def friend_params
-      params.expect(friend: [ :first_name, :last_name, :email, :phone, :facebook ])
+      params.expect(friend: [ :first_name, :last_name, :email, :phone, :facebook, :user_id])
     end
 end
