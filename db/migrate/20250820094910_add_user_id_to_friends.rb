@@ -1,6 +1,5 @@
 class AddUserIdToFriends < ActiveRecord::Migration[8.0]
   def change
-    add_column :friends, :user_id, :integer
-    add_index :friends, :user_id
+    add_reference :friends, :user, null: false, foreign_key: true
   end
 end
